@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+.cyrcle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 20%;
+  position: relative;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+    background: conic-gradient( #ff00ff,  #00ffff,  #ff00ff);
+    mask: radial-gradient(circle, rgba(0,0,0,0) 50%, black 31%);
+    animation: spin 1.5s linear infinite;
+    display: block;
+    margin: 10% auto;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+h1 {
+    color: white;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #393939;
+    padding: 15px;
+    border-radius: 5px;
+    width: 350px;
+}
+.search-box input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    width: 400px;
+    padding: 10px;
+border-radius: 10px;
+
+}
+.search-box button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: grey;
+    padding: 10px 12px 10px;
+    border-radius: 10px;
+    margin: 1%;
+}
+ .search-box button:hover{
+    background-color: rgba(128, 128, 128, 0.545);
+}
+ h3{
+    color: azure;
+   font-family: 'Chatbot',sans-serif;
+}
